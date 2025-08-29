@@ -1,0 +1,30 @@
+[package]
+name = "boost_type_erasure"
+description = "Boost C++ library boost_type_erasure packaged using Zanbil"
+version = "0.1.0"
+edition = "2024"
+links = "boost_type_erasure"
+license = "BSL-1.0"
+repository = "https://github.com/zanbilify/boost_type_erasure"
+
+[package.metadata.zanbil]
+make_dependencies_public = true
+
+[dependencies]
+boost_assert = { version = "0.1.0", path = "../boost_assert" }
+boost_config = { version = "0.1.0", path = "../boost_config" }
+boost_core = { version = "0.1.0", path = "../boost_core" }
+boost_fusion = { version = "0.1.0", path = "../boost_fusion" }
+boost_iterator = { version = "0.1.0", path = "../boost_iterator" }
+boost_mp11 = { version = "0.1.0", path = "../boost_mp11" }
+boost_mpl = { version = "0.1.0", path = "../boost_mpl" }
+boost_preprocessor = { version = "0.1.0", path = "../boost_preprocessor" }
+boost_smart_ptr = { version = "0.1.0", path = "../boost_smart_ptr" }
+boost_thread = { version = "0.1.0", path = "../boost_thread" }
+boost_throw_exception = { version = "0.1.0", path = "../boost_throw_exception" }
+boost_type_traits = { version = "0.1.0", path = "../boost_type_traits" }
+boost_typeof = { version = "0.1.0", path = "../boost_typeof" }
+boost_vmd = { version = "0.1.0", path = "../boost_vmd" }
+
+[build-dependencies]
+zanbil-boost-build = "0.1.0"
